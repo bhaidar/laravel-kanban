@@ -31,8 +31,8 @@ const showingNavigationDropdown = ref(false);
                                 :active="route().current('dashboard')">
                                 Dashboard
                             </NavLink>
-                            <NavLink :href="route('kanban')"
-                                :active="route().current('kanban')">
+                            <NavLink :href="route('boards')"
+                                :active="route().current('boards')">
                                 Kanban
                             </NavLink>
                         </div>
@@ -105,8 +105,8 @@ const showingNavigationDropdown = ref(false);
                         :active="route().current('dashboard')">
                         Dashboard
                     </ResponsiveNavLink>
-                    <ResponsiveNavLink :href="route('kanban')"
-                        :active="route().current('kanban')">
+                    <ResponsiveNavLink :href="route('boards')"
+                        :active="route().current('boards')">
                         Kanban
                     </ResponsiveNavLink>
                 </div>
