@@ -37,7 +37,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
 
-    Route::get('/boards', [BoardController::class, 'show'])->name('boards');
+    Route::get('/boards/{board}', [BoardController::class, 'show'])->name('boards');
 
     Route::post('/boards/{board}/columns', BoardColumnCreateController::class)
         ->name('boards.columns.store');
