@@ -8,12 +8,14 @@ The goal is not the board by itself, but rather to demonstrate how to batch upda
 There are several ways to achieve this goal, however, I've chosen a built option, which using the Eloquent upsert() method.
 
 
+<img width="1396" alt="Screenshot 2023-03-02 at 9 11 00 PM" src="https://user-images.githubusercontent.com/1163421/222528207-9514609b-cea9-4ce8-8d50-2ff1a62f1bbd.png">
+
+
 ## Installation
 
 I use Laravel Sail over Docker to build and develop this application. However, you could easily run this application locally without having Laravel Sail.
 
 Follow the steps below to install and run the application locally.
-
 
 
 1. Clone this project
