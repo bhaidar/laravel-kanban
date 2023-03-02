@@ -23,7 +23,7 @@ const cardsRef = ref();
 // Keep the cards up-to-date
 watch(() => props?.column, () => cards.value = props?.column?.cards);
 
-// Move to composable
+// TODO: Move to composable
 const isOpen = ref(false);
 const closeModal = (confirm) => {
     isOpen.value = false;

@@ -10,7 +10,7 @@ const props = defineProps({
     card: Object,
 });
 
-// Move to composable
+// TODO: Move to composable
 const isOpen = ref(false);
 const closeModal = (confirm) => {
   isOpen.value = false;
