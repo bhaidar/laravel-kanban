@@ -93,7 +93,7 @@ const showForm = async () => {
         </button>
       </div>
     </form>
-    <div v-if="!isEditing">
+    <div v-else>
       <p class="text-sm">{{ cardContent }}</p>
       <div
         class="hidden absolute right-1 inset-0 group-hover:flex justify-end space-x-2 items-center"

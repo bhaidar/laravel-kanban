@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint --fix resources/js",
-    "format": "prettier 'resources/{js,vue}/**/*.{js,vue}' --write",
+    "format": "prettier 'resources/js/**/*.{js,vue}' --write",
     "pre-commit": "npm run format && lint-staged && pretty-quick --staged"
   },
   "devDependencies": {
