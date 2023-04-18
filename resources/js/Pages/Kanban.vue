@@ -14,6 +14,12 @@ const boardTitle = computed(() => props.board?.data?.title);
 
 const columnsWithOrder = ref([]);
 
+const getColumnsData = () => {
+    return columnsWithOrder.value.filter((column) => {
+        return column.cards?.length > 0;
+    })
+}
+
 const onReorderChange = column => {
   columnsWithOrder.value?.push(column);
 };
@@ -24,7 +30,7 @@ const onReorderCommit = () => {
   }
 
   router.put(route('cards.reorder'), {
-    columns: columnsWithOrder.value,
+    columns: getColumnsData(),
   });
 };
 </script>
