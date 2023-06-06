@@ -17,7 +17,7 @@ class BoardColumnCreateController extends Controller
      */
     public function __invoke(StoreColumnRequest $request, Board $board): RedirectResponse
     {
-        $board->columns()->save(Column::create($request->all()));
+        $board->addColumn(Column::create($request->all()));
         return back();
     }
 }

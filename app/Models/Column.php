@@ -26,4 +26,8 @@ class Column extends Model
     {
         return $this->hasMany(Card::class)->orderBy('position');
     }
+
+    public function addCard(Card $card): void{
+        $this->cards()->save($card);
+    }
 }

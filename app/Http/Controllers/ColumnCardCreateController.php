@@ -14,7 +14,7 @@ class ColumnCardCreateController extends Controller
      */
     public function __invoke(StoreCardRequest $request, Column $column): RedirectResponse
     {
-        $column->cards()->save(Card::create($request->all()));
+        $column->addCard(Card::create($request->all()));
         return back();
     }
 }

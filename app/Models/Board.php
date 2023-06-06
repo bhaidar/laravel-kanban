@@ -24,4 +24,9 @@ class Board extends Model
     {
         return $this->hasMany(Column::class)->oldest();
     }
+
+    public function addColumn(Column $column): void
+    {
+        $this->columns()->save($column);
+    }
 }
