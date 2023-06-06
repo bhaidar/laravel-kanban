@@ -1,6 +1,6 @@
 const Ziggy = {
-  url: 'http://localhost:1003',
-  port: 1003,
+  url: 'http://localhost:8081',
+  port: 8081,
   defaults: {},
   routes: {
     'debugbar.openhandler': { uri: '_debugbar/open', methods: ['GET', 'HEAD'] },
